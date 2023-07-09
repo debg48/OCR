@@ -44,7 +44,7 @@ if uploaded_file is not None:
             time.sleep(0)    
         st.write('The extraction is scheduled on',t)
         delay = ((t.hour-datetime.datetime.now().time().hour)*3600)+((t.minute-datetime.datetime.now().time().minute)*60)+((t.second-datetime.datetime.now().time().second))
-        print(delay)
+        # print(delay)
         time.sleep(delay)
 
     else : 
@@ -53,8 +53,8 @@ if uploaded_file is not None:
     schedule = True
     loop_button = True
 
-    print(t)
-    print(datetime.datetime.now().time())
+    # print(t)
+    # print(datetime.datetime.now().time())
     if (t <= datetime.datetime.now().time()):
 
         st.subheader('Extracting Text ! This may take a few minutes......')
